@@ -253,7 +253,7 @@ Calculate Now
 </div>
 <div class="quick-contact-inner">
 <h2>What are you thinking? <br> don’t worry! get connected and say hello to us</h2>
-<p>*We’re willingly is here to answer your question about aila</p>
+<p>*We’re open to answer all questions</p>
 <ul class="section-button">
 <li>
 <a href="contact-us.php" class="btn1 orange-gradient btn-with-image">

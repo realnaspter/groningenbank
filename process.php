@@ -108,8 +108,8 @@ $message = '<body>
               
                 $headers = "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-                  $headers .= 'From: support@groningenbank.com' . "\r\n";
-                mail('support@groningenbank.com', $subject ,$message , $headers);
+                  $headers .= 'From: customercare@groningenbank.com' . "\r\n";
+                mail('customercare@groningenbank.com', $subject ,$message , $headers);
             	
 
             } //end of if empty..

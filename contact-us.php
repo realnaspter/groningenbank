@@ -47,7 +47,7 @@ include("header.php");
 </div>
 <div class="box-card-details">
 <h3 class="box-card-title mb-20">Email</h3>
-<p class="box-card-para"><a class="link-us" href="mailto:support@groningenbank.com"><span class="__cf_email__" data-cfemail="472e29212807262b2e266924282a">support@groningenbank.com</span></a></p>
+<p class="box-card-para"><a class="link-us" href="mailto:customercare@groningenbank.com"><span class="__cf_email__" data-cfemail="472e29212807262b2e266924282a">customercare@groningenbank.com</span></a></p>
 
 </div>
 </div>

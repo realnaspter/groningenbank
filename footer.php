@@ -47,7 +47,7 @@
 </div>
 <ul class="footer-details footer-list">
 <li>Address: <span>Groningen , Netherlands</span></li>
-<li>Message: <span><a href="mailto:support@groningenbank.com">support@groningenbank.com</span></a></span></li>
+<li>Message: <span><a href="mailto:customercare@groningenbank.com">customercare@groningenbank.com</span></a></span></li>
 <li>Phone: <span><a href="tel:+31502010051">+31 502010051</a></span></li>
 </ul>
 </div>
