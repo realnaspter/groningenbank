@@ -6,26 +6,24 @@
 <div class="col-sm-12 col-md-12 col-lg-4">
 <div class="footer-content-item">
 <div class="footer-logo">
-<a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
+<a href="index.php"><img src="assets/images/logo-white.png" alt="logo"></a>
 </div>
 <div class="footer-details">
-<p>Lorem ipsum dolor sit amet, consectetur adiisicing elit, sed do eiusmod tempor inc
-Neque porro quisquam est qui dolorem aliquam quaerat luptatem. sed do eiusmod tempor
-inc </p>
+<p>Groningenbank is a personal and business bank with a mission. For 10 years, we have been dedicated to working with our customers, members and partners to create a future-proof society that can overcome important social challenges. </p>
 </div>
 </div>
 </div>
 <div class="col-sm-6 col-md-4 col-lg-2">
 <div class="footer-content-list footer-content-item">
 <div class="footer-content-title">
-<h3>Support</h3>
+<h3>Loans</h3>
 </div>
 <ul class="footer-details footer-list">
-<li><a href="faqs.html">FAQ's</a></li>
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="terms-conditions.html">Terms & Conditions</a></li>
-<li><a href="blogs.html">Blogs</a></li>
-<li><a href="contact-us.html">Contact Us</a></li>
+<li><a href="auto-loan.php">Auto Loan</a></li>
+<li><a href="mortgage-loan.php">Mortgage Loan</a></li>
+<li><a href="home-equity-loan.php">Home Equity Loans</a></li>
+<li><a href="personal-loan.php">Personal Loans</a></li>
+<li><a href="contact-us.php">Contact Us</a></li>
 </ul>
 </div>
 </div>
@@ -35,11 +33,10 @@ inc </p>
 <h3>Company</h3>
 </div>
 <ul class="footer-details footer-list">
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="features.html">Features</a></li>
-<li><a href="pricing.html">Our Pricing</a></li>
-<li><a href="blogs.html">Blogs</a></li>
+<li><a href="about-us.php">About Us</a></li>
+<li><a href="loans.php">Loans</a></li>
+<li><a href="personal-banking.php">Personal Banking</a></li>
+<li><a href="business-banking.php">Business Banking</a></li>
 </ul>
 </div>
 </div>
@@ -75,7 +72,7 @@ inc </p>
 </footer>
 
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/jquery.magnific-popup.min.js"></script>

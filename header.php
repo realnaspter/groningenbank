@@ -127,7 +127,7 @@
 <a href="business-banking.php" class="nav-link dropdown-toggle">Business Banking</a>
 <ul class="dropdown-menu">
 <li class="nav-item">
-<a href="transactional-account.php" class="nav-link">Transactional Account</a>
+<a href="transactional-account-business.php" class="nav-link">Transactional Account</a>
 </li>
 <li class="nav-item">
 <a href="investments-accounts.php" class="nav-link">Investments Accounts</a>
@@ -140,7 +140,7 @@
 </li>
 
 <li class="nav-item">
-<a href="loan-calculator.php" class="nav-link">Loan Calculator</a>
+<a href="/loan-calculator/index.html" class="nav-link">Loan Calculator</a>
 </li>
 
 <li class="nav-item">
@@ -152,7 +152,7 @@
 <div class="navbar-option">
 
 <div class="navbar-option-item">
-<a href="authentication.html" class="btn1 btn-with-image text-nowrap">
+<a href="#" class="btn1 btn-with-image text-nowrap">
 <i class="flaticon-login"></i>
 <i class="flaticon-login"></i>
 Online Banking

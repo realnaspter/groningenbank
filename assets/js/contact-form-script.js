@@ -21,14 +21,14 @@
         var name = $("#name").val();
         var email = $("#email").val();
         var msg_subject = $("#msg_subject").val();
-        var phone_number = $("#phone_number").val();
+        //var phone_number = $("#phone_number").val();
         var message = $("#message").val();
 
-
+var dataString = 'fullname=' + name + '&email=' + email + '&subject='+ msg_subject +'&message=' + message + '&option=contact';
         $.ajax({
             type: "POST",
-            url: "assets/php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
+            url: "process.php?option=contact",
+            data: dataString,
             success : function(text){
                 if (text == "success"){
                     formSuccess();

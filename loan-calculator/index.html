@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Loan Simulator | Groningenbank</title>
+    <meta name="description" content="">  
+    <!-- Bootstrap -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">  
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+<header>
+<div class="container">
+<div class="row">
+  <div class="col-sm-12">
+  	<div class="logo">
+    	<h1 class="page_title text-center">Groningenbank Loan Calculator</h1>
+    </div>
+  </div>
+</div>
+</div>
+</header><section class="midd_content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="extra_div">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center">
+      <form class="sip_form text-left" role="form" id="calculator_form" method="post" action="#"> 
+        <div class="row"> 
+          <div class="col-sm-6 text-center col-sm-offset-3 pb-5">
+            <div class="form-group">
+              <label>Currency</label>
+              <select class="form-control" id="currency" name="currency" onchange="change_currency(this)" required="">
+                  <option value="USD">USD</option>
+                  <option value="CAD">CAD</option>
+                  <option value="INR">INR</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GPB">GPB</option>             
+                </select>    
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+                <label>Loan Amount</label>
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend left_radious">
+                      <div class="input-group-text"><span id="currency_icon">USD</span></div>
+                  </div>
+                  <input type="text" value="0" id="loan_amount" class="form-control"  placeholder="Enter Amount" name="loan_amount" onkeypress="return isNumberKey(event)" required>
+              </div>
+            </div>
+            <div class="form-group">
+                <label>Annual Interest Rate</label>
+                 <div class="input-group mb-2">
+                   <div class="input-group-prepend left_radious">
+                      <div class="input-group-text">%</div>
+                  </div>
+                  <input id="interest_rate" type="text" class="form-control"  placeholder="Enter Interest Rate" name="interest_rate" onkeypress="return isNumberKey(event)" required>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+                  <label>Term (in Years)</label>
+              <div class="input-group mb-2">
+                  <input type="text" id="time_duration" class="form-control"  placeholder="Enter Years" name="time_duration" onkeypress="return isNumberKey(event)" required>
+                  <div class="input-group-prepend right_radious">
+                      <div class="input-group-text">Yr.</div>
+                  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Frequency</label>   
+                <select class="form-control" id="frequency" name="frequency" required="">
+                  <option value="1">Annually</option>
+                  <option value="2">Semi-Annually</option>
+                  <option value="4">Quarterly</option>
+                  <option value="6">Bi-Monthly</option>
+                  <option value="12">Monthly</option>
+                  <option value="24">Semi-Monthly</option>
+                  <option value="26">Bi-Weekly</option>
+                  <option value="52">Weekly</option>
+                </select>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-sm-12 btn_sipform text-center">
+            <input type="submit" id="sub_btn" name="submit" class="btn btn-success btn_submit" value="Calculate">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+    </div>  
+    <div id="show_result" class="col-sm-10 col-sm-offset-1" style="display:none;">
+      <div id="calculation_result" style="display: none;">
+        <div class="full_dv table_print_dv">
+          <table class="table table-striped" width="100%" id="tblresults" cellspacing="0" cellpadding="2">
+            <thead>
+              <tr>
+                <td colspan="4"><h2>Simulator Results</h2></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                      <td align="left" class="rowname">Currency :</td>      
+                      <td align="right"><span class="result_currency"></span></td>             
+                   </tr>
+              <tr>
+                      <td align="left" class="rowname">Loan Amount :</td>      
+                      <td align="right"><span class="result_loan_amount"></span></td>             
+                   </tr>
+                   <tr>
+                      <td align="left" class="rowname"> Interest Rate % :</td>      
+                      <td align="right"><span class="result_interest_rate"></span></td>             
+                   </tr><tr>
+                      <td align="left" class="rowname">Term( in Years ) :</td>      
+                      <td align="right"><span class="result_term_year"></span></td>             
+                   </tr><tr>
+                      <td align="left" class="rowname">Payment :</td>     
+                      <td align="right"><span class="result_payment"></span></td>              
+                   </tr>
+                   <tr>
+                      <td align="left" class="rowname">Frequency :</td><td align="right"><span class="result_frequency"></span></td></tr>
+                      <tr>
+                      <td align="left" class="rowname">Total Interest :</td>      
+                      <td align="right"><span class="result_total_interest"></span></td>             
+                   </tr>
+                   <tr>
+                      <td align="left" class="rowname">Total Payment :</td>      
+                      <td align="right"><span class="result_total_payment"></span></td>             
+                   </tr>
+                 </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="error_message" style="display:none;color: red;"></div>
+    </div>
+  </div>
+</section>
+<script>
+$("#calculator_form").submit(function(e){  
+  e.preventDefault();  
+
+   $("#sub_btn").val("Calculating...");
+   $("#sub_btn").attr("disabled", "disabled");
+  var loan_amount = parseFloat($("#loan_amount").val());
+  var interest_rate = $("#interest_rate").val(); 
+  var time_duration = $("#time_duration").val();
+  var frequency = $("#frequency").val();
+  var frequency_title = $("#frequency option:selected").text();
+  var currency = $("#currency").val();
+ // var valid_amount = /^\d{0,4}(\.\d{0,2})?$/;
+  var check = true;
+
+
+if(currency == null || currency == "" || $("#currency").val() == "")
+        {   
+           showError('Please select currency  ');
+
+            check=false;
+        }
+
+
+
+ if(loan_amount == "" || loan_amount.length == 0 )
+        {
+            showError('Please enter loan amount');
+            check=false;
+        }
+
+
+  if(interest_rate == null || interest_rate == "" || $("#interest_rate").val() == "")
+        {   
+           showError('Please enter interest rate');
+
+            check=false;
+        }
+
+          if(time_duration == null || time_duration == "" || $("#time_duration").val() == "")
+        {   
+           showError('Please enter term in years');
+
+            check=false;
+        }
+
+
+    if(frequency == null || frequency == "" || $("#frequency").val() == "")
+        {   
+           showError('Please select frequency deduction ');
+
+            check=false;
+        }
+
+
+
+  if(check == true)
+        {
+           setTimeout(calculate(loan_amount, interest_rate, time_duration, frequency, frequency_title, currency), 2000);
+
+        }
+
+
+});
+
+function calculate(loan_amount, interest_rate, time_duration, frequency,frequency_title,  currency){
+    
+       $("#sub_btn").val("Calculate");
+       $("#sub_btn").removeAttr("disabled", "disabled");
+    
+    //alert(currency);
+    //UI variable
+    const UIamount = document.getElementById('amount');
+    const UIinterest = document.getElementById("interest");
+    const UIyears = document.getElementById("years");
+    const UImonthlyPayment = document.getElementById("monthly-payment");
+    const UItotalPayment= document.getElementById("total-payment");
+    const UItotalInterest = document.getElementById("total-interest");
+
+    const principal = parseFloat(loan_amount);
+    const calculatedInterest = parseFloat(interest_rate)/100 / frequency ;
+    const calculatedPayments = parseFloat(time_duration)* frequency;
+
+    //complete monthly payment
+    const x = Math.pow(1 + calculatedInterest,calculatedPayments);
+    const monthly = (principal*x*calculatedInterest)/(x-1);
+    
+    if(principal < 0)
+    {
+        showError('Please Enter Positive Amount for Principal');
+    }
+    else if(calculatedInterest < 0)
+    {
+        showError('Please Enter Positive Interest Rate');
+    }
+    else if(calculatedPayments  < 0)
+    {
+        showError('Please Enter Positive Value');
+    }
+    else if(isFinite(monthly)){
+
+        $(".result_loan_amount").html(loan_amount);
+        $(".result_interest_rate").html(interest_rate);
+        $(".result_term_year").html(time_duration);
+        $(".result_payment").html(monthly.toFixed(2));
+        $(".result_total_payment").html((monthly*calculatedPayments).toFixed(2));
+        $(".result_total_interest").html(((monthly * calculatedPayments)-principal).toFixed(2));
+        $(".result_frequency").html(frequency_title);
+        $(".result_currency").html(currency);
+        $("#show_result").show();
+        $("#calculation_result").fadeIn();
+
+      
+    }else{
+        
+       showError('Please check your number');
+    }
+
+
+}
+   
+
+   function showError(message)
+   {  
+      $("#show_result").show();
+      $("#calculation_result").hide();
+      $("#error_message").html(message);
+       $('#error_message').fadeOut(5000);
+       $('#error_message').show();
+       $('#error_message').fadeOut(5000);
+       $("#sub_btn").val("Try Again");
+       $("#sub_btn").removeAttr("disabled", "disabled");
+   }
+
+</script>
+<footer>
+  <div class="footer_menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center copyright_sec"> 
+          <p>
+               <small> Copyright @ 2022 <a href="https://www.groningenbank.com/" target="_blank">Groningenbank</a> All Rights Reserved.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script src="assets/js/bootstrap.js"></script>
+<link rel="stylesheet" href="assets/plugins/datepicker/datepicker3.css">
+<script src="assets/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+  function isNumberKey(evt) {
+    var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+    if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+      return false;
+
+    return true;
+  } 
+  function change_currency(e) {
+     var currency = $(e).val();
+     $('#currency_icon').html(currency);
+     //alert(currency);
+     $(".result_currency").html(currency);
+
+  }
+
+
+</script>
+  </body>
+</html>
