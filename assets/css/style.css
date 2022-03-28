@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*------------------------------------------------------------------
 [Table of contents]
-@File: Aila Template Style
+
 
 [ DEFULT INDEX NUMBER ]
 1. Defult css with Helper css
@@ -5954,7 +5954,7 @@ button:focus, button:active {
 }
 
 .authentication-img-bg {
-  background-image: url("../images/authentication-bg.png");
+  background-image: url("../images/digital-banking.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

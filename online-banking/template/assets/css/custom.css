@@ -1,0 +1,57 @@
+.paper-card {
+    background: #2f74f4 !important;
+}
+
+.main-sidebar {
+	background: #2f74f4 !important;
+	}
+.theme-color
+{
+	background: #f20f10 !important;
+}
+
+.list-group-item {
+	background: #2f74f4 !important;
+}
+
+.sidebar-menu > li > a{
+	color: #fff !important;
+}
+
+.offcanvas .sidebar-menu li a:hover {
+    background-color:#f20f10 !important;
+}
+
+#pagination a, #pagination strong {
+    display: inline-block;
+    padding-left: 0;
+    padding: 4px 7px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font: 12px Arial,Helvetica,sans-serif;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 1px solid #2f74f4 ;
+    background: #FFF;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+#pagination strong, #pagination a:hover {
+    font-weight: normal;
+    background: #2f74f4  none repeat scroll 0% 0%;
+    color: #FFF !important;
+}
+
+.sidebar-menu .treeview-menu>li>a{
+    color: #fff !important;
+}
+
+.form-control-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-append>.btn, .input-group-lg>.input-group-append>.input-group-text, .input-group-lg>.input-group-prepend>.btn, .input-group-lg>.input-group-prepend>.input-group-text{
+    padding: 0px !important;
+}
+
+#progress-bar {background-color: #12CC1A;height:20px;color: #FFFFFF;width:0%;-webkit-transition: width .3s;-moz-transition: width .3s;transition: width .3s;}
+#progress-div {border:#0FA015 1px solid;padding: 5px 0px;margin:30px 0px;border-radius:4px;text-align:center;}
+#targetLayer{width:100%;text-align:center;}

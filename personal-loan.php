@@ -50,7 +50,7 @@ include("header.php");
 </p>
 <p>Salaried Earners Scheme (Non-Guarantee) - SESN : A short- to medium-term personal loan structured for salaried employees on our Workplace Banking Group Scheme who earn a minimum net salary of USD 500 a month at negotiated concessionary rates
 </p>
-<a href="online-banking/apply-loan" class="btn1 orange-gradient btn-with-image">
+<a href="apply-loan.php" class="btn1 orange-gradient btn-with-image">
 <i class="flaticon-agenda"></i>
 <i class="flaticon-agenda"></i>
 Apply Now

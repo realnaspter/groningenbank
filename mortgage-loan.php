@@ -121,7 +121,7 @@ However with Groningenbank , there are different mortgage types. Compare these d
 </tbody>
 </table>
 <p>The above rates are for illustrative purposes only. They are based on the Annual Percentage Rate (APR) indicated for principal and simple interest with a term of 30 years. We offer a variety of mortgage plans.</p>
-<a href="online-banking/apply-loan" class="btn1 orange-gradient btn-with-image">
+<a href="apply-loan.php" class="btn1 orange-gradient btn-with-image">
 <i class="flaticon-agenda"></i>
 <i class="flaticon-agenda"></i>
 Apply Now

@@ -72,7 +72,7 @@
 <div class="main-nav main-nav-2 is-sticky">
 <div class="container-fluid">
 <nav class="navbar navbar-expand-md navbar-light">
-<a class="navbar-brand" href="index.html">
+<a class="navbar-brand" href="index.php">
 <img src="assets/images/logo.png" alt="logo">
 </a>
 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -152,7 +152,7 @@
 <div class="navbar-option">
 
 <div class="navbar-option-item">
-<a href="#" class="btn1 btn-with-image text-nowrap">
+<a href="online-banking/login" class="btn1 btn-with-image text-nowrap">
 <i class="flaticon-login"></i>
 <i class="flaticon-login"></i>
 Online Banking

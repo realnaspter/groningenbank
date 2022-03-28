@@ -54,7 +54,7 @@ include("header.php");
 
 </p>
 
-<a href="online-banking/apply-loan" class="btn1 orange-gradient btn-with-image">
+<a href="apply-loan.php" class="btn1 orange-gradient btn-with-image">
 <i class="flaticon-agenda"></i>
 <i class="flaticon-agenda"></i>
 Apply Now
