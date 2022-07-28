@@ -89,7 +89,7 @@ Personal Loans
 </div>
 <div class="col-sm-12 col-md-12 col-lg-6 p-0">
 <div class="home-facility-item img-right-res pb-30">
-<img src="assets/images/home-enterprise-2.png" alt="facility">
+<img src="assets/images/banner-1.jpeg" alt="facility">
 </div>
 </div>
 </div>
@@ -98,7 +98,7 @@ Personal Loans
 <div class="row align-items-center m-0">
 <div class="col-sm-12 col-md-12 col-lg-6 p-0">
 <div class="home-facility-item img-left-res pb-30">
-<img src="assets/images/home-business-2.png" alt="facility">
+<img src="assets/images/banner-2.jpeg" alt="facility">
 <div class="home-about-animated-img home-animated-img-right">
 <img src="assets/images/smartphone1.png" alt="smartphone">
 </div>
@@ -182,7 +182,7 @@ Calculate Now
 </div>
 <div class="col-sm-12 col-md-12 col-lg-6 p-0">
 <div class="home-facility-item img-right-res pb-30">
-<img src="assets/images/home-entreprenour-2.png" alt="facility">
+<img src="assets/images/banner.jpeg" alt="facility">
 <div class="home-about-animated-img home-animated-table-img home-animated-img-left">
 <img src="assets/images/data-table.png" alt="data-table">
 </div>
